@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel"> 
+let HomePage = () => {
+      return (
+        <div>
+          <Navbar />
+        <Flex/>
+        <div className="container">
+           <div>         <Flex1 img="./picture 2.png" cat="DEVELOPMENT" date="July 2, 2020" title="Hybrid vs. Native — Here is how you can choose one over the other…" sum="There is no denying it, hybrid mobile development is booming and becoming the main option when considering developing a mobile application due to the lower costs and faster development time."/> 
+</div>
+           <div>         <Flex1 img="./picture 3.webp" cat="DEVELOPMENT" date="July 2, 2020" title="From monolithic to headless: how and why you should adapt your WordPress stack" sum="Every dynamic website consists of two main parts: the backend and the frontend. The backend, which in marketing websites is commonly a Content Management System (CMS), allows the website owners..."/> 
+</div>
+        </div>
+        </div>
+      )
+    }
+let Navbar=() => {
+  return (
+    <div className="navbar"> 
+      <div>  <img src="Pixelmatters_logo.png" /></div>
+    <div> <ul>
+    <li className="inactive"> Work</li>
+    <li className="inactive"> Approach</li>
+    <li className="inactive"> Culture </li>
+    <li className="inactive"> Careers </li>
+    <li className="active"> Blog </li>
+    <li> <Button/> </li>
+   </ul> 
+   </div>
+    </div>
+   )
+}
+let Flex =() =>{
+  return (
+    <div className="flex1"> 
+      <div className="bigpic"> <img src="./picture 1.jpg" className="article"/></div>
+      <div className="articleinfo"> <Info cat="PRODUCT" date="July 24, 2020"/>
+        <h1 className="title">Interview — What it's like to work remotely in big-sized product development? </h1>
+        <p className="sum">People say that developing products isn't easy. Neither it is to build long-distance relationships. But, how about doing both, simultaneously?</p>
+        <Author pic="./author1.jpeg" name="Bruno Teixeira" position="Head of Product" />
+        </div>
+    </div>
+  )
+}
+let Flex1=({img,cat,date,title,sum}) => {
+  return (
+    <div className="flex"> 
+      <div> <img src={img} className="articles"/></div>
+      <div className="articleinfo"> <Info cat={cat} date={date}/>
+        <h1 className="title">{title} </h1>
+        <p className="sum">{sum}</p>
+        </div>
+    </div>
+  )
+}
+let Info =({cat,date})=> {
+  return (
+    <div className="postinfo">  <div className="cat"> {cat}  </div> <div className="divider"> . </div> <div className="date"> {date} </div>
+      </div>
+  )
+}
+let Author =({pic,name,position}) => {
+  return (
+    <div className="Author"> <div > <img src={pic} className="authorPic"/> </div>
+    <div className="authorinfo"> <div className="name"> {name} </div> 
+      <div className="position">{position} </div> </div>
+    </div>
+  )
+}
+function Button() {
+      return <button >Get in touch</button>;
+    }
+
+let app = document.querySelector("#root")
+const root = ReactDOM.render(<HomePage />, app)
+</script>
+</body>
+</html>

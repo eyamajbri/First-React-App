@@ -1,0 +1,128 @@
+body{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.navbar {
+  font-family: Matter,Open Sans,Arial,Helvetica Neue,Helvetica,Lucida Grande,sans-serif;;
+  color: #000;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+img{
+  width: 150px;
+}
+.navbar ul {
+  line-height: 1.7;
+  letter-spacing: normal;
+  font-size: 16px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.active{
+  text-decoration: underline;
+  font-weight: bolder;
+  text-underline-position: under;
+}
+button{
+  background-color: #ff745d ;
+  font-size: 15px;
+  border: 0;
+  color: white;
+  padding: 4px 17px 6px 16px;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+.flex1{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.article{
+  height: 300px;
+  width: auto;
+  border-radius: 2%;
+}
+.Author{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.authorinfo{
+  margin-left: 10px;
+}
+.name .position{
+  font-family: Matter,sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+}
+.authorPic{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.container{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.articles{
+  height: 170px;
+  width: 90%;
+  margin-left: 10px;
+  border-radius: 2%;
+}
+.articleinfo{
+  margin-left: 20px;
+}
+.title{
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Matter,sans-serif;
+}
+.sum{
+  font-family: Matter,sans-serif;
+  font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #5b6066;
+
+}
+.postinfo{
+  display: flex;
+  align-items: center;
+  font-family: Matter,sans-serif;
+  color: #5b6066;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.cat{
+ font-weight: bolder;
+}
+.divider{
+  width: 4px;
+    height: 4px;
+    margin-right: 6px;
+    margin-left: 6px;
+    border-radius: 12px;
+    background-color: #5b6066;
+    font-family: Matter,sans-serif;
+    color: #5b6066;
+    font-size: 10px;
+    line-height: 28px;
+    font-weight: 400;
+ }
